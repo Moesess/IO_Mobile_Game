@@ -26,6 +26,10 @@ public class GridBuildingSystem : MonoBehaviour{
         gridPlacedObjectSO = null;
     }
 
+    private void Start() {
+        TryPlaceObject(new Vector2Int(0, 0), GridBuildingSystemAssets.Instance.castle, out GridPlacedObject gridPlacedObject);
+    }
+
     public class GridObject {
         // Object populating the grid, eg. building, tree. One per grid cell.
         private GridXZ<GridObject> grid;
@@ -80,7 +84,7 @@ public class GridBuildingSystem : MonoBehaviour{
             if(TryPlaceObject(gridPlacedObjectOrigin, gridPlacedObjectSO, out GridPlacedObject gridPlacedObject)){
                 // Debug.Log("Building Placed!");
             }else{
-                UtilsClass.CreateWorldTextPopup("Cannot Build Here!", mousePos);
+                // UtilsClass.CreateWorldTextPopup("Cannot Build Here!", mousePos);
             }
         }
 

@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4558690823911664750}
   - component: {fileID: -3659310871607502087}
+  - component: {fileID: 8869478454585685945}
   m_Layer: 0
   m_Name: pfHouse2
   m_TagString: Untagged
@@ -224,6 +225,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e45e56513e6f4f2468685f6f47808e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8869478454585685945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7044046254201239972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e4b015f9e5edd429ea049b06112082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9167092309419528293

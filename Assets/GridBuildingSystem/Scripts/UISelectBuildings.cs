@@ -20,10 +20,10 @@ public class UISelectBuildings : MonoBehaviour{
                 GridBuildingSystem.Instance.SelectPlacedObjectSO(gridPlacedObjectSO);
             };
 
-            gridPlacedObjectTransformDic[gridPlacedObjectSO].gameObject.SetActive(active);
+            // gridPlacedObjectTransformDic[gridPlacedObjectSO].gameObject.SetActive(active);
         }
 
-        transform.Find("BuildPanel").gameObject.SetActive(active);
+        // transform.Find("BuildPanel").gameObject.SetActive(active);
     }
 
     private void Start() {
@@ -54,11 +54,11 @@ public class UISelectBuildings : MonoBehaviour{
             backgroundPanel.GetComponent<Animation>().Play("Down");
 
 
-        foreach (GridPlacedObjectSO gridPlacedObjectSO in gridPlacedObjectTransformDic.Keys) {
-            gridPlacedObjectTransformDic[gridPlacedObjectSO].gameObject.SetActive(active);
-        }
+        // foreach (GridPlacedObjectSO gridPlacedObjectSO in gridPlacedObjectTransformDic.Keys) {
+        //     gridPlacedObjectTransformDic[gridPlacedObjectSO].gameObject.SetActive(active);
+        // }
 
-        backgroundPanel.SetActive(active);
+        // backgroundPanel.SetActive(active);
     }
 }
 

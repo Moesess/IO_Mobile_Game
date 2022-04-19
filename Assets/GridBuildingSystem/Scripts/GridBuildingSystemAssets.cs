@@ -13,6 +13,7 @@ public class GridBuildingSystemAssets : MonoBehaviour{
 
     public GridPlacedObjectSO house;
     public GridPlacedObjectSO mansion;
+    public GridPlacedObjectSO castle;
 
     public GridPlacedObjectSO GetGridPlacedObjectTypeSOFromName(string placedObjectTypeSOName) {
         foreach (GridPlacedObjectSO gridPlacedObjectSO in gridPlacedObjectSOArray) {

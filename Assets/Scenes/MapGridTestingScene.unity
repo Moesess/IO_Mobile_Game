@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 170337694}
   - component: {fileID: 170337693}
   - component: {fileID: 170337695}
+  - component: {fileID: 170337696}
   m_Layer: 0
   m_Name: BuildPanel
   m_TagString: Untagged
@@ -571,7 +572,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170337691}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -639,6 +640,26 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &170337696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170337691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &210900786
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,11 +694,11 @@ RectTransform:
   m_Father: {fileID: 1328099942}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -5, y: -0.000015258789}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -4.9000244, y: 0}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &210900788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1072,6 @@ GameObject:
   m_Component:
   - component: {fileID: 338320599}
   - component: {fileID: 338320600}
-  - component: {fileID: 338320601}
   m_Layer: 0
   m_Name: MansionBTN
   m_TagString: Untagged
@@ -1076,9 +1096,9 @@ RectTransform:
   m_Father: {fileID: 1328099942}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 175.00003, y: 50.000027}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338320600
@@ -1102,23 +1122,6 @@ MonoBehaviour:
   hoverBehaviour_Move: 0
   hoverBehaviour_Move_Amount: {x: 0, y: 0}
   triggerMouseOutFuncOnClick: 0
---- !u!111 &338320601
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338320598}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e58d4833c73ad0248a3e6f866c7708f7, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e58d4833c73ad0248a3e6f866c7708f7, type: 2}
-  - {fileID: 7400000, guid: eec4a296a0288d644b376bde5a829b48, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &410128646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d9139f48dded54c9b08625081a3d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridPlacedObjectSOList: []
+  gridPlacedObjectSOList:
+  - {fileID: 11400000, guid: 10569830e0293f3439ba4dab3fcfbf13, type: 2}
+  - {fileID: 11400000, guid: fca7ff865f15198429246dfa06b7bef9, type: 2}
 --- !u!1 &473636787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,7 +2230,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1071328692}
   - component: {fileID: 1071328693}
-  - component: {fileID: 1071328694}
   m_Layer: 0
   m_Name: HouseBTN
   m_TagString: Untagged
@@ -2250,9 +2254,9 @@ RectTransform:
   m_Father: {fileID: 1328099942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50.00003, y: 50.000027}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1071328693
@@ -2276,23 +2280,6 @@ MonoBehaviour:
   hoverBehaviour_Move: 0
   hoverBehaviour_Move_Amount: {x: 0, y: 0}
   triggerMouseOutFuncOnClick: 0
---- !u!111 &1071328694
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071328691}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e58d4833c73ad0248a3e6f866c7708f7, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e58d4833c73ad0248a3e6f866c7708f7, type: 2}
-  - {fileID: 7400000, guid: eec4a296a0288d644b376bde5a829b48, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1277540612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328099942}
   - component: {fileID: 1328099943}
+  - component: {fileID: 1328099944}
   m_Layer: 0
   m_Name: UISelectBuildings
   m_TagString: Untagged
@@ -2384,6 +2372,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f57544d540d8e4d9c2333bda5ddd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1328099944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328099941}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &1408377835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,7 +2875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1899046230

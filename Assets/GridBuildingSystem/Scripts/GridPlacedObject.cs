@@ -6,10 +6,11 @@ public class GridPlacedObject : MonoBehaviour{
     public static GridPlacedObject Create(Vector3 worldPosition, Vector2Int origin, GridPlacedObjectSO gridPlacedObjectSO){
         Transform gridPlacedObjectTransform = Instantiate(gridPlacedObjectSO.prefab, worldPosition, Quaternion.identity);
         GridPlacedObject gridPlacedObject = gridPlacedObjectTransform.GetComponent<GridPlacedObject>();
+        Building building = gridPlacedObjectTransform.GetComponent<Building>();
 
         gridPlacedObject.gridPlacedObjectSO = gridPlacedObjectSO;
         gridPlacedObject.origin = origin;
-        // gridPlacedObject.building = new Building(0, 0);
+        gridPlacedObject.building = building;
         
         gridPlacedObject.Setup();
         return gridPlacedObject;
@@ -18,7 +19,7 @@ public class GridPlacedObject : MonoBehaviour{
 
     private GridPlacedObjectSO gridPlacedObjectSO;
     private Vector2Int origin;
-    private BuildingSO building;
+    private Building building;
 
     protected virtual void Setup(){
         // Debug.Log("GridPlacedObject.Setup() " + transform);
